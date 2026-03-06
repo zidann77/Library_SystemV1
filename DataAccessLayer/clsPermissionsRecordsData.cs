@@ -563,27 +563,34 @@ namespace DataAccessLayer
         }
 
 
-        public static bool DoesRoleHasPermission( int RoleID, int PermissionNumber)
+        public static bool DoesRoleHasPermission(int RoleID, int PermissionNumber)
         {
-            int rowsAffected = 0;
+            int Exist = 0;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-                string query = @"
-               select found = 1 from PermissionsRecords inner join Persmissions on
-             PermissionsRecords.PermissionID = Persmissions.PermissionID and
-               PermissionsRecords.RoleID = @RoleID and PermissionNumber = @PermissionNumber";
-               
+            string query = @"SELECT        n=1
+FROM            PermissionsRecords INNER JOIN
+                         Persmissions ON PermissionsRecords.PermissionID = Persmissions.PermissionID INNER JOIN
+                         Roles ON PermissionsRecords.RoleID = Roles.RoleID
+
+						 where Roles.RoleID =@RoleID and Persmissions.PermissionNumber = @PermissionNumber;";
+
+
             SqlCommand command = new SqlCommand(query, connection);
 
             command.Parameters.AddWithValue("@RoleID", RoleID);
             command.Parameters.AddWithValue("@PermissionNumber", PermissionNumber);
-         
+
 
             try
             {
                 connection.Open();
-                rowsAffected = command.ExecuteNonQuery();
+               var found = command.ExecuteScalar();
+                if (found != null && int.TryParse(found.ToString(), out int result))
+                {
+                    Exist = result;
+                }
             }
             catch
             {
@@ -594,7 +601,7 @@ namespace DataAccessLayer
                 connection.Close();
             }
 
-            return (rowsAffected > 0);
+            return Exist == 1;
         }
 
 
