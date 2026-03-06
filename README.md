@@ -15,7 +15,7 @@ Designed for librarians to handle day-to-day operations efficiently, with featur
 - 🖥 Simple dashboard for overview
 - 📅 Reservations system
 - 🔒 Permissions / roles for users
-- 📊 Excel export of book data
+- 📊 Excel export of data
 - 🗂 Manage copies for each book
 - 🧠 AI book recommendations
 - 🏗 Clean 3-tier architecture (UI / BLL / DAL)
