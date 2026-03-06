@@ -86,6 +86,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showPersonInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSend = new Guna.UI2.WinForms.Guna2CircleButton();
             this.tpBorrowings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tbBooks.SuspendLayout();
@@ -806,6 +807,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.SeaGreen;
+            this.guna2Panel1.Controls.Add(this.btnSend);
             this.guna2Panel1.Controls.Add(this.lbUserName);
             this.guna2Panel1.Controls.Add(this.pbuserImg);
             this.guna2Panel1.Location = new System.Drawing.Point(-11, -3);
@@ -847,6 +849,24 @@
             this.showPersonInfoToolStripMenuItem.Name = "showPersonInfoToolStripMenuItem";
             this.showPersonInfoToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.showPersonInfoToolStripMenuItem.Text = "Show Person Info";
+            // 
+            // btnSend
+            // 
+            this.btnSend.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSend.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSend.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSend.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSend.FillColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSend.ForeColor = System.Drawing.Color.White;
+            this.btnSend.Image = global::Library.Properties.Resources.ai;
+            this.btnSend.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnSend.Location = new System.Drawing.Point(1171, 14);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnSend.Size = new System.Drawing.Size(64, 60);
+            this.btnSend.TabIndex = 10;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // frmMain
             // 
@@ -953,6 +973,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
+        private Guna.UI2.WinForms.Guna2CircleButton btnSend;
     }
 }
 

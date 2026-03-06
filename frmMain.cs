@@ -1,4 +1,5 @@
 ﻿using BusinessLogicLayer;
+using Library.AI.form;
 using Library.Books;
 using Library.Borrowings.Forms;
 using Library.Dashboard.Circulation;
@@ -226,6 +227,13 @@ namespace Library
         private void pbuserImg_Click(object sender, EventArgs e)
         {
             frmUserInfo frm = new frmUserInfo(clsGlobal.CurrentUser.UserID);
+            frm.ShowDialog();
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            frmAISuggestionsFrom frm = new frmAISuggestionsFrom();
+
             frm.ShowDialog();
         }
     }

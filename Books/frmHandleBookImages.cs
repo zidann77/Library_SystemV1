@@ -83,11 +83,11 @@ namespace Library.Books
             RefreshUI();
         }
 
-        private void OnImageDeleted(int index)
+        private void OnImageDeleted(int index)  // Shift images up
         {
             Images[index] = null;
 
-            // Shift images up
+           
             for (int i = index; i < Images.Count - 1; i++)
             {
                 Images[i] = Images[i + 1];

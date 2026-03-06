@@ -153,6 +153,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\form\frmAISuggestionsFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AI\form\frmAISuggestionsFrom.Designer.cs">
+      <DependentUpon>frmAISuggestionsFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookCopies\ControlsCopies\ctrlAddCopy.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -279,6 +285,7 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global Classes\AIService.cs" />
     <Compile Include="Global Classes\clsGlobal.cs" />
     <Compile Include="Global Classes\clsLogger.cs" />
     <Compile Include="Global Classes\clsLoginSettings.cs" />
@@ -370,6 +377,9 @@
     <Compile Include="Users\Forms\frmUsersList.Designer.cs">
       <DependentUpon>frmUsersList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AI\form\frmAISuggestionsFrom.resx">
+      <DependentUpon>frmAISuggestionsFrom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookCopies\ControlsCopies\ctrlAddCopy.resx">
       <DependentUpon>ctrlAddCopy.cs</DependentUpon>
     </EmbeddedResource>
@@ -501,7 +511,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AI\" />
     <Folder Include="Borrowings\Controls\" />
   </ItemGroup>
   <ItemGroup>
@@ -820,6 +829,12 @@
       <Project>{c19d61bf-3774-40ea-b8c4-c4209f2203fa}</Project>
       <Name>BusinessLogicLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

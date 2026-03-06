@@ -133,6 +133,16 @@ namespace Library.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ai {
+            get {
+                object obj = ResourceManager.GetObject("ai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ancestors {
             get {
                 object obj = ResourceManager.GetObject("ancestors", resourceCulture);
@@ -826,6 +836,16 @@ namespace Library.Properties {
         internal static System.Drawing.Bitmap right_arrow {
             get {
                 object obj = ResourceManager.GetObject("right-arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap send {
+            get {
+                object obj = ResourceManager.GetObject("send", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

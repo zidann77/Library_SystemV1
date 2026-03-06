@@ -169,11 +169,14 @@
   <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-delete-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-delete-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="log-out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\log-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="timer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\timer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,6 +253,9 @@
   <data name="dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="library (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\library (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add-friend" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add-friend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -310,8 +316,8 @@
   <data name="error (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\error (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-delete-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-delete-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="timer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\timer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="library" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\library.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -397,7 +403,7 @@
   <data name="user-access" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-access.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="library (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\library (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\send.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
