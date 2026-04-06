@@ -32,15 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lbtitle = new System.Windows.Forms.Label();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ContextMenuStrip2 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.reloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAddnewBook = new Guna.UI2.WinForms.Guna2CircleButton();
             this.showBookInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCopyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +43,13 @@
             this.addCopyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.borrowBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reserveBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ContextMenuStrip2 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.reloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddnewBook = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.askAIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
@@ -64,6 +65,22 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1190, 84);
             this.guna2Panel1.TabIndex = 11;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Image = global::Library.Properties.Resources.icons8_close_48;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1015, 24);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = global::Library.Properties.Resources.icons8_close_48;
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(42, 42);
+            this.guna2ImageButton1.TabIndex = 11;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // lbtitle
             // 
@@ -139,7 +156,8 @@
             this.updateInfoToolStripMenuItem,
             this.addCopyToolStripMenuItem,
             this.borrowBookToolStripMenuItem,
-            this.reserveBookToolStripMenuItem});
+            this.reserveBookToolStripMenuItem,
+            this.askAIToolStripMenuItem});
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
             this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -150,7 +168,71 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(181, 146);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(181, 170);
+            // 
+            // showBookInfoToolStripMenuItem
+            // 
+            this.showBookInfoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.showBookInfoToolStripMenuItem.Image = global::Library.Properties.Resources.book__1_1;
+            this.showBookInfoToolStripMenuItem.Name = "showBookInfoToolStripMenuItem";
+            this.showBookInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.showBookInfoToolStripMenuItem.Text = "Show Book Info";
+            this.showBookInfoToolStripMenuItem.Click += new System.EventHandler(this.showBookInfoToolStripMenuItem_Click_1);
+            // 
+            // updateInfoToolStripMenuItem
+            // 
+            this.updateInfoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.updateInfoToolStripMenuItem.Image = global::Library.Properties.Resources.resume_942748__1_;
+            this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
+            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.updateInfoToolStripMenuItem.Text = "Update Info";
+            this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
+            // 
+            // addCopyToolStripMenuItem
+            // 
+            this.addCopyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copiesListToolStripMenuItem,
+            this.addCopyToolStripMenuItem1});
+            this.addCopyToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.addCopyToolStripMenuItem.Image = global::Library.Properties.Resources.book__5_;
+            this.addCopyToolStripMenuItem.Name = "addCopyToolStripMenuItem";
+            this.addCopyToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.addCopyToolStripMenuItem.Text = "Manage Copies";
+            this.addCopyToolStripMenuItem.Click += new System.EventHandler(this.addCopyToolStripMenuItem_Click);
+            // 
+            // copiesListToolStripMenuItem
+            // 
+            this.copiesListToolStripMenuItem.Image = global::Library.Properties.Resources.book__3_;
+            this.copiesListToolStripMenuItem.Name = "copiesListToolStripMenuItem";
+            this.copiesListToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
+            this.copiesListToolStripMenuItem.Text = "Copies List";
+            this.copiesListToolStripMenuItem.Click += new System.EventHandler(this.copiesListToolStripMenuItem_Click);
+            // 
+            // addCopyToolStripMenuItem1
+            // 
+            this.addCopyToolStripMenuItem1.Image = global::Library.Properties.Resources.plus;
+            this.addCopyToolStripMenuItem1.Name = "addCopyToolStripMenuItem1";
+            this.addCopyToolStripMenuItem1.Size = new System.Drawing.Size(149, 24);
+            this.addCopyToolStripMenuItem1.Text = "Add Copy";
+            this.addCopyToolStripMenuItem1.Click += new System.EventHandler(this.addCopyToolStripMenuItem1_Click);
+            // 
+            // borrowBookToolStripMenuItem
+            // 
+            this.borrowBookToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.borrowBookToolStripMenuItem.Image = global::Library.Properties.Resources.borrow;
+            this.borrowBookToolStripMenuItem.Name = "borrowBookToolStripMenuItem";
+            this.borrowBookToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.borrowBookToolStripMenuItem.Text = "Borrow Book";
+            this.borrowBookToolStripMenuItem.Click += new System.EventHandler(this.borrowBookToolStripMenuItem_Click);
+            // 
+            // reserveBookToolStripMenuItem
+            // 
+            this.reserveBookToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.reserveBookToolStripMenuItem.Image = global::Library.Properties.Resources.reserve1;
+            this.reserveBookToolStripMenuItem.Name = "reserveBookToolStripMenuItem";
+            this.reserveBookToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.reserveBookToolStripMenuItem.Text = "Reserve Book ";
+            this.reserveBookToolStripMenuItem.Click += new System.EventHandler(this.reserveBookToolStripMenuItem_Click);
             // 
             // guna2TextBox1
             // 
@@ -250,85 +332,14 @@
             this.btnAddnewBook.TabIndex = 17;
             this.btnAddnewBook.Click += new System.EventHandler(this.btnAddnewBook_Click_1);
             // 
-            // showBookInfoToolStripMenuItem
+            // askAIToolStripMenuItem
             // 
-            this.showBookInfoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.showBookInfoToolStripMenuItem.Image = global::Library.Properties.Resources.book__1_1;
-            this.showBookInfoToolStripMenuItem.Name = "showBookInfoToolStripMenuItem";
-            this.showBookInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.showBookInfoToolStripMenuItem.Text = "Show Book Info";
-            this.showBookInfoToolStripMenuItem.Click += new System.EventHandler(this.showBookInfoToolStripMenuItem_Click_1);
-            // 
-            // updateInfoToolStripMenuItem
-            // 
-            this.updateInfoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.updateInfoToolStripMenuItem.Image = global::Library.Properties.Resources.resume_942748__1_;
-            this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
-            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.updateInfoToolStripMenuItem.Text = "Update Info";
-            this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
-            // 
-            // addCopyToolStripMenuItem
-            // 
-            this.addCopyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copiesListToolStripMenuItem,
-            this.addCopyToolStripMenuItem1});
-            this.addCopyToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.addCopyToolStripMenuItem.Image = global::Library.Properties.Resources.book__5_;
-            this.addCopyToolStripMenuItem.Name = "addCopyToolStripMenuItem";
-            this.addCopyToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.addCopyToolStripMenuItem.Text = "Manage Copies";
-            this.addCopyToolStripMenuItem.Click += new System.EventHandler(this.addCopyToolStripMenuItem_Click);
-            // 
-            // copiesListToolStripMenuItem
-            // 
-            this.copiesListToolStripMenuItem.Image = global::Library.Properties.Resources.book__3_;
-            this.copiesListToolStripMenuItem.Name = "copiesListToolStripMenuItem";
-            this.copiesListToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
-            this.copiesListToolStripMenuItem.Text = "Copies List";
-            this.copiesListToolStripMenuItem.Click += new System.EventHandler(this.copiesListToolStripMenuItem_Click);
-            // 
-            // addCopyToolStripMenuItem1
-            // 
-            this.addCopyToolStripMenuItem1.Image = global::Library.Properties.Resources.plus;
-            this.addCopyToolStripMenuItem1.Name = "addCopyToolStripMenuItem1";
-            this.addCopyToolStripMenuItem1.Size = new System.Drawing.Size(149, 24);
-            this.addCopyToolStripMenuItem1.Text = "Add Copy";
-            this.addCopyToolStripMenuItem1.Click += new System.EventHandler(this.addCopyToolStripMenuItem1_Click);
-            // 
-            // borrowBookToolStripMenuItem
-            // 
-            this.borrowBookToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.borrowBookToolStripMenuItem.Image = global::Library.Properties.Resources.borrow;
-            this.borrowBookToolStripMenuItem.Name = "borrowBookToolStripMenuItem";
-            this.borrowBookToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.borrowBookToolStripMenuItem.Text = "Borrow Book";
-            this.borrowBookToolStripMenuItem.Click += new System.EventHandler(this.borrowBookToolStripMenuItem_Click);
-            // 
-            // reserveBookToolStripMenuItem
-            // 
-            this.reserveBookToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.reserveBookToolStripMenuItem.Image = global::Library.Properties.Resources.reserve1;
-            this.reserveBookToolStripMenuItem.Name = "reserveBookToolStripMenuItem";
-            this.reserveBookToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.reserveBookToolStripMenuItem.Text = "Reserve Book ";
-            this.reserveBookToolStripMenuItem.Click += new System.EventHandler(this.reserveBookToolStripMenuItem_Click);
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Image = global::Library.Properties.Resources.icons8_close_48;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1015, 24);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = global::Library.Properties.Resources.icons8_close_48;
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(42, 42);
-            this.guna2ImageButton1.TabIndex = 11;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            this.askAIToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.askAIToolStripMenuItem.Image = global::Library.Properties.Resources.ai;
+            this.askAIToolStripMenuItem.Name = "askAIToolStripMenuItem";
+            this.askAIToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.askAIToolStripMenuItem.Text = "Ask AI";
+            this.askAIToolStripMenuItem.Click += new System.EventHandler(this.askAIToolStripMenuItem_Click);
             // 
             // frmBooksList
             // 
@@ -378,5 +389,6 @@
         private System.Windows.Forms.ToolStripMenuItem addCopyToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem borrowBookToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reserveBookToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem askAIToolStripMenuItem;
     }
 }

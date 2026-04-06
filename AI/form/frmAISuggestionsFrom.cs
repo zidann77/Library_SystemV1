@@ -37,6 +37,8 @@ namespace Library.AI.form
 
             string userMessage = UserTextBox.Text + NotePrompt;
 
+            AnswerTextBox.Text = "Thinking...";
+
             string result = await ai.GetResponseAsync(userMessage);
 
             AnswerTextBox.Text = result;

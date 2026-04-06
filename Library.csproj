@@ -219,6 +219,12 @@
     <Compile Include="Books\controls\ctrlBookInfo.Designer.cs">
       <DependentUpon>ctrlBookInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Books\frmAskAIBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\frmAskAIBook.Designer.cs">
+      <DependentUpon>frmAskAIBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Books\frmBookInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,6 +415,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Books\controls\ctrlBookInfo.resx">
       <DependentUpon>ctrlBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\frmAskAIBook.resx">
+      <DependentUpon>frmAskAIBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Books\frmBookInfo.resx">
       <DependentUpon>frmBookInfo.cs</DependentUpon>

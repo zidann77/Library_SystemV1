@@ -355,5 +355,16 @@ namespace Library.Books
             frmReserveBook frm = new frmReserveBook(Bookid);
             frm.ShowDialog();
         }
+
+        private void askAIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int Bookid = (int)guna2DataGridView1.CurrentRow.Cells[0].Value;
+            clsBook book = clsBook.Find(Bookid);
+            string Info = $"Name:{book.Title} , Details :{book.Detailes}";
+
+            frmAskAIBook frm = new frmAskAIBook(Info);
+          frm.ShowDialog();
+
+        }
     }
 }
