@@ -17,5 +17,5 @@ Designed for librarians to handle day-to-day operations efficiently, with featur
 - 🔒 Permissions / roles for users
 - 📊 Excel export of data
 - 🗂 Manage copies for each book
-- 🧠 AI book recommendations
+- 🧠 AI Assistant
 - 🏗 Clean 3-tier architecture (UI / BLL / DAL)
