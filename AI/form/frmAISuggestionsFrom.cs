@@ -1,4 +1,5 @@
-﻿using Library.AI.Services;
+﻿using BusinessLogicLayer;
+using Library.AI.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,8 @@ namespace Library.AI.form
 {
     public partial class frmAISuggestionsFrom : Form
     {
-        string NotePrompt = "Always be polite and informative in your responses , make sure your anser bo short as much as possible .";
+
+        string NotePrompt = "books you Can Sugggest if not another , y are a chat bot in my library " + string.Join("##", clsBook.GetAllBooksTitles());
         public frmAISuggestionsFrom()
         {
             InitializeComponent();

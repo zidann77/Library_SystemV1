@@ -138,6 +138,7 @@
             // 
             // AnswerTextBox
             // 
+            this.AnswerTextBox.AutoScroll = true;
             this.AnswerTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AnswerTextBox.DefaultText = "";
             this.AnswerTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

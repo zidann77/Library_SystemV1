@@ -225,6 +225,40 @@ namespace DataAccessLayer
             return dt;
         }
 
+        public static string[] getAllBooksTitles()
+        {
+            string[] Titles = null;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "select Title from DTBooksList";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                   
+                    Titles = new string[reader.FieldCount];
+                    Titles = reader.Cast<IDataRecord>().Select(r => r["Title"].ToString()).ToArray();
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Titles;
+        }
+
         public static bool isBookExist(int BookID)
         {
             bool isFound = false;

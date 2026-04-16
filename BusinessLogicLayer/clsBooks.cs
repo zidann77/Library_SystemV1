@@ -118,6 +118,11 @@ namespace BusinessLogicLayer
             return clsBooksData.getAllBooks();
         }
 
+        public static string[] GetAllBooksTitles()
+        {
+            return clsBooksData.getAllBooksTitles();
+        }
+
         public static DataTable GetBookCopisByBookID(int bookId)
         {
             return clsBooksData.getBookCopiesByBookId(bookId);

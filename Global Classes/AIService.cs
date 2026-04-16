@@ -32,7 +32,7 @@ namespace Library.AI.Services
                 {
                     contents = new[]
                     {
-                new { parts = new[] { new { text = userPrompt } } }
+                new { parts = new[] { new { text = userPrompt + "Please provide your answer as a single, continuous paragraph. Do not use bullet points, numbering, or bold text." } } }
             }
                 };
 
